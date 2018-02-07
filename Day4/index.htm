@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+function LoadPage(){
+    document.getElementById('frame_a').src = "frame_a.htm";
+}
+</script>
+
+<title>
+	Frames
+</title>
+
+</head>
+
+<frameset rows="50%,50%" onload="LoadPage();">
+  <frame id="frame_a">
+  <frameset cols="40%,30%,30%">
+		  <frame name="frame_c" >
+		  <frame name="frame_d">
+		  <frame name="frame_e">		 
+  </frameset>
+</frameset>
+
+</html>

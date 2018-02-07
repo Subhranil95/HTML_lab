@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+  
+
+<body>
+<form>
+ 
+ Name:
+ <input type="text" id="name"><br><br><br>
+ 
+ Address:
+ <input type="radio" id="l_add_button" name="radio_button" onclick = "myfunc1()">Local Address	
+ <input type="radio" id="p_add_button" name="radio_button" onclick = "myfunc2()">Permanent Address<br>	
+ 
+ <div id="l_add_text">
+ Local address:
+ <input type="text" id="l_add_text_val">
+ </div>
+ 
+ <div id="p_add_text">
+ Permanent address:
+ <input type="text" id="p_add_text_val">
+ </div>
+ 
+ Mobile Number:
+ <input type="text" id="mobile_number"><br><br><br>
+ <input type="button" id="Submit" value="Submit" onclick="submit_clicked()">
+ <input type="submit" id="Refresh" value="Refresh"><br>
+
+</form>
+</body>
+
+ <script>
+ document.getElementById("l_add_text").style.visibility = "hidden";
+ document.getElementById("p_add_text").style.visibility = "hidden";
+ 
+ function myfunc1(){
+ document.getElementById("l_add_text").style.visibility = "visible";
+ document.getElementById("p_add_text").style.visibility = "hidden";
+ }
+ 
+ function myfunc2(){
+ document.getElementById("p_add_text").style.visibility = "visible";
+ document.getElementById("l_add_text").style.visibility = "hidden";
+ }
+ 
+ function submit_clicked(){
+ var name = document.getElementById("name").value;
+ var address_l = document.getElementById("l_add_text_val").value;
+ var address_p = document.getElementById("p_add_text_val").value;
+ var mob_num = document.getElementById("mobile_number").value;
+ 
+ if(isNaN(mob_num) == true || mob_num.length != 10){
+ alert("Enter 10 digits in mobile number")
+ }
+ 
+ else{
+ if(document.getElementById("l_add_text").style.visibility == "visible"){
+ alert("Name : " + name + "\nLocal Address : " + address_l + "\nMobile No. : " + mob_num);
+ } 
+ 
+ if(document.getElementById("p_add_text").style.visibility == "visible"){
+ alert("Name : " + name + "\nPermanent Address : " + address_p + "\nMobile No. : " + mob_num);
+ } 
+
+ } 
+ 
+ }
+ 
+ </script>
+
+</html>

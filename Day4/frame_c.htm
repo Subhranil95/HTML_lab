@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function myfunc2(){
+			top.frames['frame_d'].location='frame_d.htm';
+		}
+		function myfunc3(){
+			top.frames['frame_e'].location='frame_e.htm';
+		}
+	</script>
+</head>
+<body>
+<h1>frame 2</h1>
+
+<form id="myform">
+	<input type="button" id="l_add_button" value="Local Address" onclick="myfunc2()">
+	<br><br>
+	<input type="button" id="p_add_button" value="Permanent Address" onclick="myfunc3()">
+	<br><br>
+
+</form>
+
+</body>
+
+</html>

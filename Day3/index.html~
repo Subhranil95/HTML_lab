@@ -1,0 +1,53 @@
+<html>
+
+<head>
+<title>
+Prof. Somesh Modi
+</title>
+
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+
+<h1>Welcome to my webpage!</h1>
+
+<img src="img.jpg" alt="The image is not available" >
+
+<h2>Current whereabouts</h2>
+
+<p>At present I am an Assistant Professor at the Department of Computer Science and Engineering, National Institute of Technology, Durgapur</p>
+
+<h2>Research Interests</h2>
+
+<p>I have worked in the following areas:
+<ol>
+<li>VLSI</li>
+<li>Embedded System</li>
+<li>Advanced Graph Theory</li>
+<li>Algorithms design</li>
+</ol>
+</p>
+
+<h2>Qualifications</h2>
+
+<p>
+<ul>
+<li>B.Tech from IIEST Shibpur in 2002</li>
+<li>M.Tech from Jadavpur University in 2005</li>
+<li>PhD from IIT Kharagpur in 2010</li>
+</ul>
+</p>
+
+<h2>Courses Taken</h2>
+<p>
+<ol>
+<li>CS-402: VLSI</li>
+<li>CS-602: Embedded System</li>
+<li>CS-703: Advanced Graph Theory</li>
+<li>CS-804: Algorithms design</li>
+</ol>
+</p>
+</body>
+</html>
